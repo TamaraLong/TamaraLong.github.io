@@ -5,41 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p|M+PLUS+Rounded+1c">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p">
 
   <!-- Font Awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
  </head>
-  </head>
   <body>
     <nav>
-      <img src="./images/logo.png"/>
+      <img  class="header_logo" src="./images/logo.png"/>
       <p class="nav_text">Tamara Fedde</p>
       <ul>
-        <li><a class="nav-link" href="index.html">Work</a></li>
+        <li><a class="nav-link first-nav-link" href="index.html">Work</a></li>
         <li><a class="nav-link" href="about.html">About</a></li>
         <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="nav-link" href="resume.html">Resume</a></li>
+        <li><a class="nav-link last-nav-link" href="resume.html">Resume</a></li>
       </ul>
     </nav>
     <header>
-      <img src="./images/logo.png"/>
+      <img class="main-logo"src="./images/logo.png"/>
       <h1>Welcome! I'm <span class="blue">Tamara*</span></h1>
       <h2>a <span class="blue">UX designer</span> based in Boston, MA.</h2>
-      <p>*sounds like <img src="./images/camera.png"/></p>
+      <h3>*sounds like <img src="./images/camera.png"/></h3>
     </header>
     <main>
       <div class="project_background">
         <div class="project_text">
-          <p class="title">Product Design & Branding</p>
-          <h3>STUDIO</h3>
-          <p>A cloud storage application for designers and creators.</p>
-          <a class="studio-case-study" href="studio.html">Read case study</a>
+          <p class="title white-label">Product Design & Branding</p>
+          <h3 class="white-label">STUDIO</h3>
+          <p class="white-label">A cloud storage application for designers and creators.</p>
+          <a class="studio-case-study white-label" href="studio.html">Read case study</a>
         </div>
-        <img src="./images/dashboard_all_content.jpg"/>
+        <img class="project-image" src="./images/dashboard_all_content.jpg"/>
       </div>
       <div>
-        <h3>I’m currently looking for a UX position in the Boston area. Want to see if I’d be a good fit at your company?</h3>
+        <h3>I’m currently looking for a UX position in the Boston area.</h3>
+        <h3>Want to see if I’d be a good fit at your company?</h3>
         <a class="contact" href="contact.html">Get in touch</a>
       </div>
     </main>
@@ -47,16 +52,16 @@
       <div>
        <ul>
          <li>
-           <a href="https://www.linkedin.com/in/tamarafedde/"><img src="./images/linkedin.png"/></a>
+           <a href="https://www.linkedin.com/in/tamarafedde/"><img class="social-link" src="./images/linkedin.png"/></a>
          </li>
          <li>
-           <a href="{https://github.com/TamaraLong}"><img src="./images/github.png"/></a>
+           <a href="{https://github.com/TamaraLong}"><img class="social-link" src="./images/github.png"/></a>
          </li>
          <li>
-           <a href="{https://www.instagram.com/tamarafedde}"><img src="./images/instagram.png"/></a>
+           <a href="{https://www.instagram.com/tamarafedde}"><img class="social-link" src="./images/instagram.png"/></a>
          </li>
          <li>
-           <a href="{https://twitter.com/TamaraFedde}"><img src="./images/twitter.png"/></a>
+           <a href="{https://twitter.com/TamaraFedde}"><img class="social-link" src="./images/twitter.png"/></a>
          </li>
          <i class="far fa-copyright"></i>
          <p>2018| Designed and Developed by Tamara Fedde</p>

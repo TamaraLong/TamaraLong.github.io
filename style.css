@@ -1,46 +1,148 @@
-/* Styling Guide */
+/* font-family: 'M PLUS 1p', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif; */
 
-body {
-  font-size: 14px;
-}
+/* typography */
 
-nav {
-  background-color: yellow;
-  height: 100px;
-  margin-top: -10px;
-  position: fixed;
-  width: 100%;
-}
-
-section {
-  margin: 0 auto;
-  width: 60%;
+.blue {
+  color: #20a39e;
+  font-weight: bolder;
 }
 
 h1 {
-  font-family: sans-serif;
-  font-size: 2em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 48px;
+  margin-bottom: 0px;
 }
 
-.example,
+h2 {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 32px;
+  margin: 20px 0 100px 0;
+}
+
 h3 {
-  padding-top: 30px;
-  text-align: center;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 28px;
+  margin: 0px;
 }
 
-h3 {
-  font-size: 1.3em;
+p {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  margin: 0px;
 }
 
-.element {
-  background-color: green;
-  height: 100px;
-  margin: 10px 0;
+/* structure */
+
+/* nav bar */
+
+nav {
+  background-color: #f0f0f0;
+  display: flex;
   width: 100%;
 }
 
-/* Last three divs */
+.header_logo {
+  height: 42px;
+  padding: 7px 0 0 150px;
+  width: 40px;
+}
 
-.blue-element {
-  background-color: blue;
+.nav_text {
+  color: #2a2c2b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #2a2c2b;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 55px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ee7768;
+}
+
+.nav-link:active {
+  color: #ee7768;
+}
+
+.last-nav-link {
+  padding-right: 150px;
+}
+
+/* Hero section */
+
+header {
+  align-items: center;
+  background-image: url("./images/geometry.png");
+  background-repeat: repeat-x repeat-y;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-logo {
+  height: 120px;
+  width: 116px;
+  margin: 75px 0;
+}
+
+/* Studio Project Space */
+
+.project_background {
+  align-items: center;
+  background-color: #20a39e;
+  display: flex;
+  justify-content: center;
+}
+
+/* .project_text {
+  display: flex;
+} */
+
+.white-label {
+  color: #fffefc;
+}
+
+.project-image {
+  height: 578px;
+  width: 813px;
+}
+
+.studio-case-study {
+  border-top: 2px solid #fffefc;
+  border-right: 2px solid #fffefc;
+  border-bottom: 2px solid #fffefc;
+  border-left: 2px solid #fffefc;
+  border-radius: 20px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: bold;
+  margin: 40px 20px;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f0f0f0;
+  display: flex;
+  width: 100%;
+}
+
+.social-link {
+  height: 35px;
+  width: 35px;
 }
