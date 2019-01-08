@@ -19,27 +19,28 @@ body {
 h1 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 48px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 32px;
   font-weight: regular;
-  margin: 0px;
+  margin: 0;
 }
 
 h3 {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 28px;
   font-weight: bolder;
-  margin: 0px;
+  margin: 0;
 }
 
 p {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
-  margin: 0px;
+  line-height: 30px;
+  margin: 0;
 }
 
 /* structure */
@@ -172,7 +173,7 @@ header {
   display: inline-block;
   font-family: 'M PLUS 1p', sans-serif;
   font-weight: bold;
-  margin: 40px 0px;
+  margin: 40px 0;
   padding: 15px 30px 15px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -193,12 +194,12 @@ header {
 .button {
   background-color: #ee7768;
   border-radius: 20px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   color: #fffefc;
   display: inline-block;
   font-family: 'M PLUS 1p', sans-serif;
   font-weight: bold;
-  margin: 40px 0px;
+  margin: 40px 0;
   padding: 15px 30px 15px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -234,4 +235,53 @@ footer {
   height: 20px;
   margin-right: 10px;
   width: 20px;
+}
+
+/******** About Page ********/
+
+.about-hero {
+  align-items: center;
+  display: flex;
+  padding: 100px 0;
+}
+
+.tampic {
+  margin-right: 20px;
+}
+
+.teal-bar {
+  height: 20px;
+  background-color: #20a39e;
+  width: 100%;
+}
+
+.about-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 360px;
+}
+
+.tldr {
+  margin-bottom: 70px;
+}
+
+.bold {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+}
+
+.poetry {
+  margin-bottom: 50px;
+}
+
+.nonprofit {
+  margin-bottom: 50px;
+}
+
+.bloc {
+  margin-bottom: 50px;
 }
