@@ -68,7 +68,7 @@ nav {
   font-weight: bold;
 }
 
-ul {
+.nav-links {
   display: flex;
   list-style-type: none;
   margin-left: auto;
@@ -129,11 +129,11 @@ header {
   margin-bottom: 20px;
 }
 
-.hero2 {
+.hero-2 {
   margin-bottom: 70px;
 }
 
-.hero3 {
+.hero-3 {
   margin-bottom: 100px;
 }
 
@@ -284,4 +284,158 @@ footer {
 
 .bloc {
   margin-bottom: 50px;
+}
+
+/******** Contact Page ********/
+
+.container {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formfield {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  width: 33%;
+}
+
+textarea {
+  width: 33%;
+}
+
+/******** Studio Case Study ********/
+
+.studio-header {
+  background: #20a39e;
+}
+
+.case-study-header {
+  color: #fffefc;
+}
+
+.studio-dash {
+  border-radius: 20px;
+  height: 636px;
+  width: 894px;
+}
+
+.studio-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 360px;
+}
+
+/* Summary Section */
+
+.project_info {
+  border: 4px solid #20a39e;
+  border-radius: 20px;
+  display: flex;
+  height: 390px;
+  justify-content: space-evenly;
+  padding: 30px 100px;
+  width: 840px;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-ul {
+  display: block;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: bold;
+}
+
+/* .pro-sol {
+  background: #f0f0f0;
+} */
+
+/* User Survey Section */
+
+.survey_results {
+  align-items: center;
+  border: 4px solid #20a39e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  justify-content: space-evenly;
+  padding: 30px 100px;
+  width: 840px;
+}
+
+.all-results {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result_percent {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.percentage {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 64px;
+  font-weight: bolder;
+  color: #20a39e;
+}
+/*
+.survey-insights {
+  display: block;
+  float: left;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+} */
+
+/* Competitive Analysis Section */
+
+.insights {
+  display: block;
+  margin-left: 0;
+  padding: 0;
+}
+
+.link {
+  color: #ee7768;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Personas Sections */
+
+.personas {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.both-personas {
+  display: flex;
+  flex-direction: row;
+}
+
+.persona-img {
+  height: 207px;
+  width: 527px;
 }
