@@ -16,8 +16,8 @@
  </head>
   <body>
     <nav>
-      <img class="header-logo" src="./images/logo.png"/>
-      <p class="nav-text">Tamara Fedde</p>
+      <a href="index.html"><img class="header-logo" src="./images/logo.png"/></a>
+      <a class="nav-text" href="index.html">Tamara Fedde</a>
       <ul class="nav-links">
         <li><a class="nav-link" href="index.html">Work</a></li>
         <li><a class="nav-link" href="about.html">About</a></li>
@@ -35,8 +35,8 @@
     <main>
       <div class="contact-background">
         <div>
-          <h1 class="text-center">Drop me a line.</h1>
-          <h2 class="text-center">I’d love to hear from you. To be in touch, fill out the form below.</h2>
+          <h1 class="text-center h-one-contact">Drop me a line.</h1>
+          <h2 class="text-center h-two-contact">I’d love to hear from you. To be in touch, fill out the form below.</h2>
         </div>
         <form class="container" action="https://formspree.io/tklong04.27@gmail.com" method="POST">
             <label for="name">Your name</label>
@@ -46,7 +46,7 @@
             <label for="message">Your message</label>
             <textarea id="message" name="message" placeholder="  Write something.." style="height:170px"></textarea>
           <div class="formfield">
-            <input class="button" type="submit" value="Submit">
+            <input class="contact-button" style="text-align:center;" type="submit" value="Submit">
           </div>
         </form>
       </div>

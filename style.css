@@ -21,6 +21,14 @@ body {
   align-items: center;
 }
 
+.p-top-margin {
+  margin: 20px 350px 0 350px;
+}
+
+.second-paragraph {
+  margin: 16px 350px 20px 350px;
+}
+
 .text-margin {
   margin: 0 350px;
 }
@@ -43,9 +51,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 32px;
-  font-weight: regular;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -60,7 +68,6 @@ p {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
 }
 
 /* structure */
@@ -84,8 +91,15 @@ nav {
 
 .nav-text {
   color: #2a2c2b;
+  font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   font-weight: bold;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.nav-text:hover {
+  color: #ee7768;
 }
 
 .nav-links {
@@ -151,16 +165,19 @@ header {
 }
 
 .hero {
+  font-weight: normal;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .hero-2 {
+  font-weight: normal;
   margin-bottom: 70px;
   text-align: center;
 }
 
 .hero-3 {
+  font-weight: normal;
   padding: 75px 0;
   text-align: center;
 }
@@ -177,14 +194,26 @@ header {
   align-items: center;
   background-color: #20a39e;
   display: flex;
-  height: 910px;
+  height: 700px;
   justify-content: space-evenly;
+}
+
+.h-two-white-label {
+  color: #fffefc;
+  font-weight: bolder;
+  margin: 10px 0 20px 0;
 }
 
 .white-label {
   color: #fffefc;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+.white-label-paragraph {
+  color: #fffefc;
+  line-height: 22px;
+  margin: 0;
 }
 
 .project-image {
@@ -202,9 +231,15 @@ header {
   font-family: 'M PLUS 1p', sans-serif;
   font-weight: bold;
   margin: 40px 0;
-  padding: 15px 30px 15px 30px;
+  padding: 20px 60px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.case-study-button:hover {
+  background: #fffefc;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  color: #20a39e;
 }
 
 /* Call to action */
@@ -222,7 +257,6 @@ header {
 .button {
   background-color: #ee7768;
   border-radius: 20px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   color: #fffefc;
   display: block;
   font-family: 'M PLUS 1p', sans-serif;
@@ -232,6 +266,11 @@ header {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ec6959;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -287,6 +326,10 @@ footer {
   margin-right: 15px;
 }
 
+.about-h-one {
+  font-weight: normal;
+}
+
 .teal-bar {
   height: 20px;
   background-color: #20a39e;
@@ -312,6 +355,27 @@ footer {
   margin: 0;
 }
 
+.about-margins {
+  margin: 5px 0 40px 0;
+}
+
+.about-ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.about-ol li {
+  counter-increment: my-awesome-counter;
+}
+
+.about-ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #2a2c2b;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .poetry {
   margin-bottom: 50px;
 }
@@ -331,9 +395,18 @@ footer {
   background-repeat: repeat-x repeat-y;
 }
 
+.h-one-contact {
+  padding: 75px 0 10px 0;
+}
+
+.h-two-contact {
+  font-weight: normal;
+  margin-bottom: 75px;
+}
+
 .container {
   margin: 0 auto;
-  width: 33%;
+  width: 40%;
 }
 
 .formfield {
@@ -353,7 +426,8 @@ input {
   border: 2px solid #dadada;
   border-radius: 10px;
   font-family: 'M PLUS 1p', sans-serif;
-  height: 45px;
+  height: 35px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -362,6 +436,26 @@ textarea {
   border-radius: 10px;
   font-family: 'M PLUS 1p', sans-serif;
   width: 100%;
+}
+
+.contact-button {
+  background-color: #ee7768;
+  border: 0;
+  border-radius: 20px;
+  color: #fffefc;
+  display: block;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: bold;
+  line-height: 0;
+  margin: 40px 500px;
+  padding: 30px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  background-color: #ec6959;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 /******** Studio Case Study ********/
@@ -406,7 +500,7 @@ textarea {
   display: flex;
   height: 390px;
   justify-content: space-evenly;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
   padding: 30px 100px;
   width: 840px;
 }
@@ -425,11 +519,12 @@ textarea {
 
 .title {
   font-weight: bold;
+  margin-top: 0;
 }
 
 .pro-sol {
   background: #f0f0f0;
-  padding: 40px 0;
+  padding: 75px 0;
 }
 
 /* User Survey Section */
@@ -442,7 +537,8 @@ textarea {
   flex-direction: column;
   height: 390px;
   justify-content: space-evenly;
-  padding: 30px 100px;
+  margin: 40px auto;
+  padding: 40px 100px;
   width: 840px;
 }
 
@@ -455,7 +551,7 @@ textarea {
 .result-percent {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .percentage {
@@ -467,7 +563,7 @@ textarea {
 }
 
 .survey-insights {
-  list-style-type: none;
+  list-style-type: disc;
   margin-left: 0;
   padding: 0;
 }
@@ -477,8 +573,9 @@ textarea {
 .competitive-results {
   border: 4px solid #20a39e;
   border-radius: 20px;
-  height: 390px;
-  padding: 30px 100px;
+  height: 300px;
+  margin: 40px auto;
+  padding: 40px 100px;
   width: 840px;
 }
 
@@ -486,6 +583,14 @@ textarea {
   display: block;
   margin-left: 0;
   padding: 0;
+}
+
+.boxed-title {
+  margin-left: 50px;
+}
+
+.boxed-li {
+  margin-left: 65px;
 }
 
 .link {
@@ -501,6 +606,7 @@ textarea {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
+  padding: 75px 0;
 }
 
 .both-personas {
@@ -545,11 +651,15 @@ textarea {
 }
 
 .persona-goals {
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .persona-pain {
-  padding: 15px;
+  padding: 0 15px;
+}
+
+.no-margins {
+  margin: 0;
 }
 
 /* User Flows and User Stories Section */
@@ -566,6 +676,7 @@ textarea {
   background: #f0f0f0;
   display: flex;
   flex-direction: column;
+  padding: 75px 0;
 }
 
 .centered-image {
@@ -576,6 +687,7 @@ textarea {
 .wireframes {
   display: flex;
   justify-content: center;
+  margin: 40px 0 10px 0;
 }
 
 .long-wireframe-image {
@@ -596,9 +708,9 @@ textarea {
 .wireframe-insights {
   border: 4px solid #20a39e;
   border-radius: 20px;
-  height: 390px;
-  margin: 0 auto;
-  padding: 30px 100px;
+  height: 250px;
+  margin: 40px auto;
+  padding: 40px 100px;
   width: 840px;
 }
 
@@ -621,13 +733,15 @@ textarea {
 .mockup-rows {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px
 }
 
 .more-testing-insights {
   border: 4px solid #20a39e;
   border-radius: 20px;
-  height: 390px;
-  padding: 30px 100px;
+  height: 230px;
+  padding: 40px 100px;
+  margin: 40px auto;
   width: 840px;
 }
 
@@ -635,6 +749,11 @@ textarea {
 
 .preference-testing {
   background: #f0f0f0;
+  padding: 75px 0;
+}
+
+.preference-title {
+  margin-top: 75px;
 }
 
 .test-one {
@@ -650,6 +769,7 @@ textarea {
 .pref-three-row {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .preference-group {
@@ -685,14 +805,19 @@ textarea {
 .preference-insights {
   border: 4px solid #20a39e;
   border-radius: 20px;
-  height: 600px;
-  padding: 30px 100px;
+  height: 700px;
+  padding: 40px 100px;
   width: 840px;
 }
 
 .underline {
   text-decoration: underline;
   font-weight: bold;
+  margin-bottom: 0;
+}
+
+.preference-marg {
+  margin: 5px 0 40px 50px;
 }
 
 /* Branding Section */
@@ -701,13 +826,22 @@ textarea {
   display: flex;
 }
 
+.logo-img {
+  max-width: 33%;
+}
+
 .final-logos {
   display: flex;
   justify-content: space-around;
+}
+
+.logo-annotation {
+  text-align: center;
 }
 
 /* Takeaways Section */
 
 .takeaways {
   background: #f0f0f0;
+  padding: 75px 0;
 }
