@@ -190,7 +190,7 @@ header {
 
 /* Studio Project Space */
 
-.project_background {
+.project-background {
   align-items: center;
   background-color: #20a39e;
   display: flex;
@@ -281,7 +281,6 @@ footer {
   display: flex;
   height: 120px;
   justify-content: space-between;
-  width: 100%;
 }
 
 .social-links {
@@ -844,4 +843,133 @@ textarea {
 .takeaways {
   background: #f0f0f0;
   padding: 75px 0;
+}
+
+/*********** Media Queries **********/
+
+.nav-hamburger {
+  display: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+/* You can do it pookie, you are the best */
+
+/* Remembering to take out the height from images. If you don't set a height, it will auto adjust when you set the widths! */
+
+@media screen and (max-width: 1199px) {
+  /* Header */
+  .header-logo {
+    margin-left: 15px;
+  }
+  .last-nav-link {
+    padding-right: 0;
+    margin-right: 15px;
+  }
+
+  /* Body */
+  .project-image {
+    height: 378px;
+    width: 613px;
+  }
+  .cta {
+    padding: 100px 50px;
+  }
+  .cta h3 {
+    text-align: center;
+  }
+
+  /* Footer */
+  .social-links {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .copywright {
+    margin-right: 0;
+  }
+  footer {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Header */
+  .nav-text {
+    display: none;
+  }
+  .header-logo {
+    margin-left: 30px;
+  }
+  .last-nav-link {
+    margin-right: 30px;
+  }
+  /* Body */
+  .project-background {
+    flex-direction: column-reverse;
+    height: 750px;
+  }
+  .project-text {
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    display: block;
+    padding: 5%;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  .copywright {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Header */
+  .nav-links {
+    display: none;
+  }
+  .nav-hamburger {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  .header-logo {
+    margin: 8px 0 8px 16px;
+  }
+  /* Footer */
+}
+
+@media screen and (max-width: 675px) {
+  /* Body */
+  .project-image {
+    height: 278px;
+    width: 513px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* Body */
+  .project-image {
+    height: initial;
+    width: 80%;
+  }
+  /* Header */
+  .nav-text,
+  .nav-links {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  .header-logo {
+    margin: 8px 0 8px 16px;
+  }
+  /* Footer */
 }
