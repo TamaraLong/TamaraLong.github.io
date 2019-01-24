@@ -922,8 +922,8 @@ hr {
 }
 
 .change.bar-one {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change.bar-two {
@@ -953,7 +953,7 @@ hr {
   height: 100%;
   background-color: #20a39e;
   /* To see when styling, make top: 0 . To make invisible set top: -150% */
-  top: 0;
+  top: 8%;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
   z-index: 100;
