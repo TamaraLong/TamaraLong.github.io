@@ -913,14 +913,24 @@ hr {
   height: 100%;
   background-color: #20a39e;
   /* To see when styling, make top: 0 . To make invisible set top: -150% */
-  top: 0;
+  top: -150%;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
   z-index: 100;
 }
 
-.mobile-menu.active {
+
+
+.mobile-menu.open {
   top: 0;
+}
+
+.mobile-menu-bar {
+  display: none;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 .mobile-close {
@@ -1292,9 +1302,20 @@ nav {
     width: 50%;
     margin: 0 auto;
   }
-  .hamburger-menu {
-    display: block;
+  nav {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .mobile-menu-bar {
+    background-color: black;
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    margin: 6px 16px 6px 0;
+    width: 35px;
+  }
+
 
   /* Footer */
 }

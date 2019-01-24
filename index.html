@@ -7,6 +7,7 @@
 <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="functions.js"></script>
 
 <!-- Google Fonts -->
     <link rel="stylesheet" link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700,800,900|M+PLUS+Rounded+1c:400,700,800,900">
@@ -16,12 +17,15 @@
 
 <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- JQuery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
  </head>
   <body>
     <header>
 <!-- Hamburger Menu Start -->
 <nav class="mobile-menu">
-  <img class="mobile-close" src="./images/x.png"/>
   <ul class="mobile-nav-links">
     <li class="mobile-li"><a class="mobile-nav-link active" href="index.html">Work</a></li>
     <li class="mobile-li"><a class="mobile-nav-link" href="about.html">About</a></li>
@@ -49,7 +53,11 @@
             </div>
         </li>
         </ul>
-        <img class="hamburger-menu" src="./images/hamburger-menu.svg"/>
+        <div class="hamburger-icon">
+          <div class="mobile-menu-bar bar-one"></div>
+          <div class="mobile-menu-bar bar-two"></div>
+          <div class="mobile-menu-bar bar-three"></div>
+        </div>
       </nav>
     </header>
     <main>
