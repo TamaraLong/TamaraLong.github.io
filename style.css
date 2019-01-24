@@ -122,7 +122,7 @@ nav {
   color: #ee7768;
 }
 
-.nav-link:active {
+.nav-link.active {
   color: #ee7768;
 }
 
@@ -144,7 +144,7 @@ nav {
 
 /* Hero section */
 
-header {
+.hero-section {
   background-image: url("./images/geometry.png");
   background-repeat: repeat-x repeat-y;
 }
@@ -177,14 +177,15 @@ header {
 }
 
 .hero-3 {
-  font-weight: normal;
-  padding: 75px 0;
+  font-size: 26px;
+  font-weight: lighter;
+  padding: 75px 0 150px 0;
   text-align: center;
 }
 
 .camera {
-  height: 36px;
-  margin-left: 5px;
+  height: 28px;
+  margin-left: 5px
   width: 51px;
 }
 
@@ -261,11 +262,12 @@ header {
   display: block;
   font-family: 'M PLUS 1p', sans-serif;
   font-weight: bold;
-  margin: 40px 500px;
+  margin: 40px auto;
   padding: 25px 35px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 25%;
 }
 
 .button:hover {
@@ -314,14 +316,18 @@ footer {
 
 /******** About Page ********/
 
+.about {
+  margin: 0 auto;
+}
+
 .about-hero {
   align-items: center;
   display: flex;
+  justify-content: center;
   padding: 100px 0;
 }
 
 .tampic {
-  margin-left: 325px;
   margin-right: 15px;
 }
 
@@ -361,6 +367,7 @@ footer {
 .about-ol {
   list-style: none;
   counter-reset: my-awesome-counter;
+  padding-left: 0;
 }
 
 .about-ol li {
@@ -426,7 +433,7 @@ input {
   border-radius: 10px;
   font-family: 'M PLUS 1p', sans-serif;
   height: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 100%;
 }
 
@@ -468,6 +475,7 @@ textarea {
 
 .case-study-header {
   color: #fffefc;
+  text-align: center;
 }
 
 .cs-descriptor {
@@ -497,7 +505,6 @@ textarea {
   border: 4px solid #20a39e;
   border-radius: 20px;
   display: flex;
-  height: 390px;
   justify-content: space-evenly;
   margin-bottom: 75px;
   padding: 30px 100px;
@@ -534,10 +541,9 @@ textarea {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  height: 390px;
   justify-content: space-evenly;
   margin: 40px auto;
-  padding: 40px 100px;
+  padding: 40px 85px;
   width: 840px;
 }
 
@@ -597,6 +603,12 @@ textarea {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ec6959;
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.09);
 }
 
 /* Personas Sections */
@@ -665,7 +677,7 @@ textarea {
 
 .user-flow {
   display: block;
-  height: 541px;
+  height: initial;
   width: 695px;
 }
 
@@ -719,7 +731,7 @@ textarea {
 }
 
 .mockup-image-sizes {
-  height: 310px;
+  height: intitial;
   width: 436px;
 }
 
@@ -733,6 +745,18 @@ textarea {
   display: flex;
   justify-content: center;
   margin-bottom: 40px
+}
+
+hr {
+  border: 1px solid grey;
+  border-radius: 5px;
+  opacity: 0.2;
+  width: 35%;
+}
+
+.blue-line {
+  border: 1px solid #20a39e;
+  margin-top: 75px;
 }
 
 .more-testing-insights {
@@ -794,11 +818,13 @@ textarea {
   color: #20a39e;
   flex: 2;
   font-weight: bold;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .preference-analysis {
   flex: 5;
+  margin: 0;
 }
 
 .preference-insights {
@@ -823,15 +849,30 @@ textarea {
 
 .logo-sketches {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo-img {
-  max-width: 33%;
+  height: initial;
+  width: 100%;
 }
 
 .final-logos {
   display: flex;
   justify-content: space-around;
+  margin-top: 75px;
+}
+
+.logos {
+  width: 25%;
+}
+
+.logo-sketch-div {
+  max-width: 33%;
+}
+
+.final-img {
+  width: 100%;
 }
 
 .logo-annotation {
@@ -845,6 +886,32 @@ textarea {
   padding: 75px 0;
 }
 
+.back-to-top {
+  color: #2a2c2b;
+  display: block;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+}
+
+.back-to-top:hover {
+  color: #ee7768;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  opacity: 90%;
+  display: block;
+}
+
 /*********** Media Queries **********/
 
 .nav-hamburger {
@@ -855,10 +922,6 @@ nav {
   position: sticky;
   top: 0;
 }
-
-/* You can do it pookie, you are the best */
-
-/* Remembering to take out the height from images. If you don't set a height, it will auto adjust when you set the widths! */
 
 @media screen and (max-width: 1199px) {
   /* Header */
@@ -872,7 +935,7 @@ nav {
 
   /* Body */
   .project-image {
-    height: 378px;
+    height: initial;
     width: 613px;
   }
   .cta {
@@ -880,6 +943,61 @@ nav {
   }
   .cta h3 {
     text-align: center;
+  }
+  .text-margin {
+    margin: 0 0 0 200px;
+  }
+  .p-top-margin {
+    margin: 20px 200px;
+  }
+  .project-info {
+    margin-bottom: 75px;
+    padding: 30px 50px;
+    width: 80%;
+  }
+  .studio-h-two {
+    margin-top: 35px;
+  }
+  .survey-results {
+    padding: 40px 70px;
+    width: 80%;
+  }
+  .competitive-results {
+    height: initial;
+    margin: 40px auto;
+    padding: 40px 50px;
+    width: 80%;
+  }
+  .second-paragraph {
+    margin: 16px 200px;
+  }
+  .wireframe-insights {
+    height: initial;
+    margin: 40px auto;
+    padding: 40px 50px;
+    width: 80%;
+  }
+  .boxed-title {
+    margin-left: 50px;
+  }
+  .more-testing-insights {
+    height: Initial;
+    padding: 40px 50px;
+    margin: 40px auto;
+    width: 80%;
+  }
+  .centered-image {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .preference-insights {
+    height: initial;
+    padding: 30px 50px;
+    margin: 40px auto;
+    width: 80%;
+  }
+  .blue-line {
+    width: 50%;
   }
 
   /* Footer */
@@ -895,6 +1013,34 @@ nav {
   }
 }
 
+@media screen and (max-width: 1088px) {
+  /**Body**/
+
+  .test-one {
+    display: block;
+  }
+  .test-two {
+    display: block;
+  }
+  .pref-three-row {
+    display: block;
+    margin-bottom: 0;
+  }
+  .preference-text {
+    display: flex;
+    margin: 0 10px 30px 10px;
+    max-width: 100%;
+  }
+  .preference-group {
+    max-width: 70%;
+    flex: 1;
+    margin: 0 auto;
+  }
+  .container {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   /* Header */
   .nav-text {
@@ -907,12 +1053,93 @@ nav {
     margin-right: 30px;
   }
   /* Body */
+  .studio-body {
+    padding-top: 75px;
+  }
   .project-background {
     flex-direction: column-reverse;
     height: 750px;
   }
   .project-text {
     text-align: center;
+  }
+  .studio-dash {
+    display: block;
+    height: initial;
+    margin: 0 auto;
+    width: 700px;
+  }
+  .text-margin {
+    margin: 0 0 0 100px;
+  }
+  .p-top-margin {
+    margin: 20px 100px;
+  }
+  .project-info {
+    margin-bottom: 75px;
+    padding: 30px 50px;
+    width: 70%;
+  }
+  .survey-results {
+    width: 75%;
+  }
+  .percentage {
+    font-size: 48px;
+  }
+  .competitive-results {
+    padding: 30px 50px;
+    width: 70%;
+  }
+  .second-paragraph {
+    margin: 16px 100px;
+  }
+  .persona-block {
+    width: 40%;
+  }
+  .studio-h-two {
+    margin-top: 35px;
+  }
+  .wireframes {
+    display: block;
+    margin: 0 auto;
+  }
+  .stacked-wireframe-images {
+    display: block;
+    height: initial;
+    margin: 0 auto;
+    width: 75%;
+  }
+  .wireframe-insights {
+    padding: 30px 50px;
+    width: 70%;
+  }
+  .long-wireframe-image {
+    display: block;
+    height: initial;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+  .boxed-title {
+    margin-left: 50px;
+  }
+  .mockup-rows {
+    display: block;
+  }
+  .mockup-images {
+    display: block;
+    text-align: center;
+  }
+  .more-testing-insights {
+    padding: 30px 50px;
+    width: 70%;
+  }
+  .preference-insights {
+    padding: 30px 50px;
+    width: 70%;
+  }
+  .blue-line {
+    width: 70%;
   }
 
   /* Footer */
@@ -926,6 +1153,9 @@ nav {
   }
   .copywright {
     text-align: center;
+  }
+  .container {
+    width: 60%;
   }
 }
 
@@ -943,14 +1173,127 @@ nav {
   .header-logo {
     margin: 8px 0 8px 16px;
   }
+  /* Body */
+  .studio-dash {
+    display: block;
+    height: initial;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .studio-header {
+    height: 600px;
+  }
+  .button {
+    width: 45%;
+  }
+  .text-margin {
+    margin: 0 0 0 50px;
+  }
+  .p-top-margin {
+    margin: 20px 50px;
+  }
+  .project-info {
+    border: none;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 30px;
+    padding: 30px 50px;
+    width: 70%;
+  }
+  .survey-results {
+    padding: 40px 0;
+    width: 75%;
+  }
+  .all-results {
+    display: block;
+    margin: 0 125px;
+    text-align: center;
+}
+  .summary-ul {
+    margin: 0 auto 25px auto;
+    text-align: center;
+  }
+  .summary-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .second-paragraph {
+    margin: 16px 50px;
+  }
+  .both-personas {
+    display: block;
+  }
+  .persona-block {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .top {
+    margin-bottom: 40px;
+  }
+  .studio-h-two {
+    margin-top: 35px;
+  }
+  .user-flow {
+    width: 80%;
+  }
+  .centered-image {
+    width: 50%;
+    margin: 0 auto;
+  }
+
   /* Footer */
 }
 
 @media screen and (max-width: 675px) {
   /* Body */
+  .studio-body {
+    padding-top: 55px;
+  }
+
   .project-image {
     height: 278px;
     width: 513px;
+  }
+  .studio-dash {
+    width: 450px;
+  }
+  .studio-header {
+    height: 530px;
+  }
+  .text-margin {
+    margin: 0 0 0 30px;
+  }
+  .p-top-margin {
+    margin: 20px 30px;
+  }
+  .all-results {
+    display: block;
+    text-align: center;
+    margin: 0 75px;
+  }
+  .second-paragraph {
+    margin: 16px 30px;
+  }
+  .persona-block {
+    width: 70%;
+  }
+  .studio-h-two {
+    margin-top: 35px;
+  }
+  .preference-group {
+    max-width: 80%;
+  }
+  .stacked-wireframe-images {
+    height: initial;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .centered-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container {
+    width: 70%;
   }
 }
 
@@ -960,6 +1303,46 @@ nav {
     height: initial;
     width: 80%;
   }
+  .studio-dash {
+    display: block;
+    height: initial;
+    margin: 0 auto;
+    width: 400px;
+  }
+.studio-header {
+    height: 450px;
+  }
+  .text-margin {
+    margin: 0 0 0 16px;
+  }
+  .p-top-margin {
+    margin: 20px 16px;
+  }
+  .second-paragraph {
+    margin: 16px 16px;
+  }
+  .persona-block {
+    width: 80%;
+  }
+  .studio-h-two {
+    margin-top: 35px;
+  }
+  .boxed-title {
+    margin-left: 25px;
+  }
+  .boxed-li {
+    margin-left: 35px;
+  }
+  .long-wireframe-image {
+    width: 75%;
+  }
+  .all-results {
+    margin: 0 60px;
+  }
+  .container {
+    width: 90%;
+  }
+
   /* Header */
   .nav-text,
   .nav-links {
