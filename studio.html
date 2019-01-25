@@ -27,7 +27,7 @@
     <div class="mobile-menu">
       <nav>
           <a href="index.html"><img class="header-logo" src="./images/logo.svg"/></a>
-          <a class="nav-text" href="index.html">Tamara Fedde</a>
+          <a class="tamara-nav-text" href="index.html">Tamara Fedde</a>
         <ul class="nav-links">
           <li><a class="nav-link active" href="index.html">Work</a></li>
           <li><a class="nav-link" href="about.html">About</a></li>
@@ -42,9 +42,24 @@
       </nav>
     </div>
     <header>
+<!-- Hamburger Menu Start -->
+      <nav class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li class="mobile-li"><a class="mobile-nav-link active" href="index.html">Work</a></li>
+          <li class="mobile-li"><a class="mobile-nav-link" href="about.html">About</a></li>
+          <li class="mobile-li"><a class="mobile-nav-link" href="contact.html">Contact</a></li>
+          <li class="mobile-li">
+            <div class="mobile-resume">
+              <img class="mobile-pdf" src="./images/pdfwhite.png"/>
+              <a class="nav-link mobile-last-nav-link" href="resume.html">Resume</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+<!-- Hamburger Menu End  -->
       <nav>
-          <a href="index.html"><img class="header-logo" src="./images/logo.svg"/></a>
-          <a class="nav-text" href="index.html">Tamara Fedde</a>
+        <a href="index.html"><img class="header-logo" src="./images/logo.svg"/></a>
+        <a class="nav-text" href="index.html">Tamara Fedde</a>
         <ul class="nav-links">
           <li><a class="nav-link active" href="index.html">Work</a></li>
           <li><a class="nav-link" href="about.html">About</a></li>
@@ -52,11 +67,16 @@
           <li>
             <div class="resume">
               <img class="pdf" src="./images/pdf3.png"/>
-              <a class="nav-link last-nav-link" href="resume.html">Resume</a>
+              <a class="nav-link last-nav-link" href="./images/resume.pdf">Resume</a>
             </div>
         </li>
         </ul>
       </nav>
+      <div class="hamburger-icon">
+        <div class="mobile-menu-bar bar-one"></div>
+        <div class="mobile-menu-bar bar-two"></div>
+        <div class="mobile-menu-bar bar-three"></div>
+      </div>
     </header>
     <main>
       <div class="studio-header">
@@ -215,10 +235,10 @@
           </div>
           <h2 class="studio-h-two text-margin">User Stories & Flows</h2>
           <p class="p-top-margin">Taking the insights from the user survey as well as the newly created user personas, I created user stories to determine the types of tasks indivudals would be looking to complete while using this new product. I then converted the stories into user flows to show how the user can accomplish primary tasks, like the one shown below.</p>
-          <a class="button" href="https://www.figma.com/proto/Gh5RkXWWzGVlUeFMNwW4TseO/Hi-Fi-Mockups?node-id=1%3A8&viewport=312%2C337%2C0.0252637&scaling=min-zoom" target="_blank">View User Stories</a>
+          <a class="button" href="https://docs.google.com/spreadsheets/d/13HLedwBDmxBVAa3vzahcpd33li0FKX-DZ0kMElB5Wzo/edit?usp=sharing" target="_blank">View User Stories</a>
           <img class="user-flow margin-center" src="./images/user-flow.png"/>
           <p class="annotation text-center">Flow for accessing and utilizing file versioning feature.</p>
-          <a class="button" href="https://www.figma.com/proto/Gh5RkXWWzGVlUeFMNwW4TseO/Hi-Fi-Mockups?node-id=1%3A8&viewport=312%2C337%2C0.0252637&scaling=min-zoom" target="_blank">View All User Flows</a>
+          <a class="button" href="https://drive.google.com/drive/folders/1UVt8X3shZgNsa8nnsLnKgZ9s3C83sNOx?usp=sharing" target="_blank">View All User Flows</a>
           <div class="sketchwires">
             <div class="sketchwires-summary">
               <h2 class="studio-h-two text-margin">Sketches & Low-Fidelity Wirefames</h2>
@@ -239,7 +259,7 @@
             <h2 class="studio-h-two text-margin">Usability Testing the Wireframes</h2>
             <p class="p-top-margin">I conducted both in-person and remote usability tests on my completed lo-fidelity wireframes. It was during this testing period that I learned that my site navigation needed to be better defined and some functionality aspects needed some tweaking. I then implemented these findings when creating my hi-fidelity mockups.</p>
             <div class="wireframe-insights">
-              <p class="title text-margin boxed-title">Key Insights</p>
+              <p class="title boxed-title">Key Insights</p>
               <ul class="insights">
                 <li class="boxed-li"><p>Adjust language on the email verification screen and move "to dashboard" button up higher.</p></li>
                 <li class="boxed-li"><p>Give users the ability to highlight text when commenting on a document.</p></li>
@@ -319,10 +339,10 @@
                   <image class="preference-pic" src="./images/preference1-1.png"/>
                   <div class="preference-text">
                     <div class="blue-results">
-                      <p class="blue-title">Option A</p>
-                      <p class="blue-title">(Winner)</p>
+                      <p class="pink-title">Option A</p>
+                      <p class="pink-title">(Winner)</p>
                     </div>
-                    <p class="preference-analysis">86% of individuals preferred this layout for the main dashboard. Users liked having the search bar at the top of the screen and saod it felt familair to other products they had used.</p>
+                    <p class="preference-analysis"><strong>86% of individuals preferred this layout </strong>for the main dashboard. Users liked having the search bar at the top of the screen and saod it felt familair to other products they had used.</p>
                   </div>
                 </div>
                 <div class="preference-group">
@@ -340,10 +360,10 @@
                   <image class="preference-pic" src="./images/preference2-1.png"/>
                   <div class="preference-text">
                     <div class="blue-results">
-                      <p class="blue-title">Option A</p>
-                      <p class="blue-title">(Winner)</p>
+                      <p class="pink-title">Option A</p>
+                      <p class="pink-title">(Winner)</p>
                   </div>
-                    <p class="preference-analysis">77% of individuals preferred the small uniform icon preview size. Those surveyed said it felt consistent and familiar.</p>
+                    <p class="preference-analysis"><strong>77% of individuals preferred the small uniform icon</strong> preview size. Those surveyed said it felt consistent and familiar.</p>
                   </div>
                 </div>
                 <div class="preference-group">
@@ -369,10 +389,10 @@
                     <image class="preference-pic" src="./images/preference3-1.png"/>
                     <div class="preference-text">
                       <div class="blue-results">
-                        <p class="blue-title">Option A</p>
-                        <p class="blue-title">(Winner)</p>
+                        <p class="pink-title">Option A</p>
+                        <p class="pink-title">(Winner)</p>
                       </div>
-                      <p class="preference-analysis">54% of individuals preferred this layout as it felt cohesive with the winning dashboard layout. Users also noted that this layout felt familiar, like Adobe CC and other creative product layouts.</p>
+                      <p class="preference-analysis"><strong>54% of individuals preferred this layout</strong> as it felt cohesive with the winning dashboard layout. Users also noted that this layout felt familiar, like Adobe CC and other creative product layouts.</p>
                     </div>
                   </div>
                 <div class="preference-group">
@@ -444,12 +464,12 @@
             <p class="underline text-margin">MVPs and scope creep</p>
             <p class="second-paragraph">I also learned a lot about managing scope creep during this process. The project brief included a lot of potential features that didn’t actually end up in the final product. Had I focused in too soon after receiving the project brief, I would have been creating a product that was too big for the scope — not to mention, one that would be under utilized by users. This was a good reminder to wait on research and results before acting.</p>
             <a class="button" href="https://www.figma.com/proto/Gh5RkXWWzGVlUeFMNwW4TseO/Hi-Fi-Mockups?node-id=1%3A8&viewport=312%2C337%2C0.0252637&scaling=min-zoom" target="_blank">View Prototype</a>
-            <a class="back-to-top" href="#top">Back to top</a>
           </div>
           <div class="cta">
             <h3>I’m currently looking for a UX position in the Boston area.</h3>
             <h3>Want to see if I’d be a good fit at your company?</h3>
             <a class="button" href="contact.html">Get in touch</a>
+            <a class="back-to-top" href="#top">Back to top</a>
           </div>
         </div>
     </main>
