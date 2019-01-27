@@ -1418,6 +1418,10 @@ nav {
     justify-content: space-between;
   }
 
+  .tamara-nav-text {
+    display: none;
+  }
+
   .mobile-menu-bar {
     background-color: black;
     border-radius: 10px;
