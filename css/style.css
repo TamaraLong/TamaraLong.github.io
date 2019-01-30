@@ -643,7 +643,7 @@ textarea {
 }
 
 .first-persona {
-  background-image: url(./images/persona1.jpg);
+  background-image: url(/images/persona1.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -654,7 +654,7 @@ textarea {
 }
 
 .second-persona {
-  background-image: url(./images/persona2.jpg);
+  background-image: url(/images/persona2.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
