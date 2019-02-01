@@ -154,7 +154,7 @@ nav {
 /* Hero section */
 
 .hero-section {
-  background-image: url("./images/geometry.png");
+  background-image: url("/images/geometry.png");
   background-repeat: repeat-x repeat-y;
 }
 
@@ -256,7 +256,7 @@ nav {
 
 .cta {
   align-items: center;
-  background-image: url("./images/geometry.png");
+  background-image: url("/images/geometry.png");
   background-repeat: repeat-x repeat-y;
   display: flex;
   flex-direction: column;
@@ -408,7 +408,7 @@ footer {
 /******** Contact Page ********/
 
 .contact-background {
-  background-image: url("./images/geometry.png");
+  background-image: url("/images/geometry.png");
   background-repeat: repeat-x repeat-y;
 }
 
