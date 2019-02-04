@@ -883,6 +883,10 @@ hr {
 
 /* Preference Testing Section */
 
+.h-two-nomarg {
+  margin-top: 0;
+}
+
 .preference-testing {
   background: #f0f0f0;
   padding: 75px 0;
