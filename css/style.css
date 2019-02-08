@@ -41,12 +41,14 @@ body {
 }
 
 h1 {
+  color: #2a2c2b;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 48px;
   margin: 0;
 }
 
 h2 {
+  color: #2a2c2b;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -54,6 +56,7 @@ h2 {
 }
 
 h3 {
+  color: #2a2c2b;
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 28px;
   font-weight: bolder;
@@ -61,6 +64,7 @@ h3 {
 }
 
 p {
+  color: #2a2c2b;
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -152,7 +156,6 @@ nav {
 
 .hero-section {
   background-image: url("/images/geometry.png");
-  background-repeat: repeat-x repeat-y;
 }
 
 .header-text {
@@ -214,7 +217,7 @@ nav {
   color: #fffefc;
   font-size: 42px;
   font-weight: bolder;
-  margin: 30px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .white-label {
@@ -227,7 +230,6 @@ nav {
   color: #fffefc;
   line-height: 22px;
   margin: 0;
-  max-width:
 }
 
 .white-label-paragraph:first-child {
@@ -237,6 +239,7 @@ nav {
 
 .project-image {
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 578px;
   width: 813px;
 }
@@ -268,7 +271,6 @@ nav {
 .cta {
   align-items: center;
   background-image: url("/images/geometry.png");
-  background-repeat: repeat-x repeat-y;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -368,12 +370,6 @@ footer {
   max-width: 525px;
 }
 
-.teal-bar {
-  height: 20px;
-  background-color: #20a39e;
-  width: 100%;
-}
-
 .about-body {
   align-items: center;
   display: flex;
@@ -436,7 +432,7 @@ footer {
 
 .contact-background {
   background-image: url("/images/geometry.png");
-  background-repeat: repeat-x repeat-y;
+  min-height: calc(100vh - 189px);
 }
 
 .h-one-contact {
@@ -452,6 +448,7 @@ footer {
 
 .container {
   margin: 0 auto;
+  max-width: 500px;
   width: 40%;
 }
 
@@ -478,10 +475,10 @@ input {
   height: 35px;
   margin-bottom: 20px;
   margin-top: 10px;
+  padding: 10px 0;
   resize: none;
   width: 100%;
 }
-
 
 textarea {
   border: 0 solid #dadada;
@@ -490,7 +487,7 @@ textarea {
   font-family: 'M PLUS 1p', sans-serif;
   margin-top: 10px;
   resize: none;
-  padding-top: 10px;
+  padding-top: 15px;
   width: 100%;
 }
 
@@ -560,7 +557,8 @@ textarea {
   width: 840px;
 }
 
-.roles, .timeframe {
+.roles,
+.timeframe {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 28%;
@@ -591,6 +589,7 @@ textarea {
 }
 
 .title {
+  font-size: 20px;
   font-weight: bold;
   margin-top: 0;
 }
@@ -657,7 +656,7 @@ textarea {
   list-style-type: none;
   padding: 0;
   margin: 30px 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* Competitive Analysis Section */
@@ -742,8 +741,26 @@ textarea {
   width: 100%;
 }
 
+.persona-title {
+  margin: 35px 0 0 0;
+}
+
 .persona-text {
   padding: 15px;
+}
+
+.persona-title:first-child {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.li-persona {
+  color: #2a2c2b;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 8px 0;
 }
 
 .persona-details {
@@ -751,11 +768,12 @@ textarea {
 }
 
 .persona-goals {
-  padding: 0 15px;
+  margin: 0 0;
+  padding: 0 15px 0 20px;
 }
 
 .persona-pain {
-  padding: 0 15px;
+  padding: 0 15px 0 20px;
 }
 
 .no-margins {
@@ -836,9 +854,6 @@ textarea {
 }
 
 /* High Fidelity Wireframes & Mockups Section */
-
-.mockups {
-}
 
 .mockup-image-sizes {
   border-radius: 10px;
@@ -935,11 +950,11 @@ hr {
 }
 
 .pink-title {
-    color: #ee7768;
-    flex: 2;
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
+  color: #ee7768;
+  flex: 2;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .blue-title {
@@ -964,7 +979,6 @@ hr {
 }
 
 .underline {
-  text-decoration: underline;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -1058,7 +1072,9 @@ hr {
   position: fixed;
 }
 
-.bar-one, .bar-two, .bar-three {
+.bar-one,
+.bar-two,
+.bar-three {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -1071,7 +1087,6 @@ hr {
   width: 100%;
   height: 100%;
   background-color: #20a39e;
-  /* To see when styling, make top: 0 . To make invisible set top: -150% */
   top: -150%;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
@@ -1079,6 +1094,10 @@ hr {
 }
 
 .open {
+  top: 0;
+}
+
+.closed {
   top: 0;
 }
 
@@ -1153,9 +1172,7 @@ hr {
   background-color: white;
 }
 
-
 /*********** Media Queries **********/
-
 .nav-hamburger {
   display: none;
 }
@@ -1170,6 +1187,7 @@ nav {
   .header-logo {
     margin-left: 15px;
   }
+
   .last-nav-link {
     padding-right: 0;
     margin-right: 15px;
@@ -1181,70 +1199,83 @@ nav {
     height: initial;
     width: 613px;
   }
+
   .cta {
     padding: 100px 50px;
   }
+
   .cta h3 {
     text-align: center;
   }
+
   .p-top-margin {
     margin: 20px 0;
   }
+
   .project-info {
     margin-bottom: 75px;
     padding: 30px 50px;
     width: 80%;
   }
+
   .studio-h-two {
     margin-top: 35px;
   }
+
   .survey-results {
     padding: 40px 70px;
     width: 80%;
   }
+
   .competitive-results {
     height: initial;
     margin: 40px auto;
     padding: 40px 50px;
     width: 80%;
   }
-  /* .second-paragraph {
-    margin: 16px 200px;
-  } */
+
   .wireframe-insights {
     height: initial;
     margin: 40px auto;
     padding: 40px 50px;
     width: 80%;
   }
+
   .boxed-title {
     margin-left: 50px;
   }
+
   .more-testing-insights {
     height: Initial;
     padding: 40px 50px;
     margin: 40px auto;
     width: 80%;
   }
+
   .mockup-image-sizes {
     width: 436px;
   }
+
   .age {
     width: 60%;
     margin: 0 auto;
   }
+
   .preference-insights {
     height: initial;
     padding: 30px 50px;
     margin: 40px auto;
     width: 80%;
   }
+
   .blue-line {
     width: 50%;
   }
+
   .about-body {
     padding: 70px 200px;
   }
+
   .about-hero {
     padding: 0 200px;
   }
@@ -1254,43 +1285,52 @@ nav {
     padding-left: 0;
     margin-left: 0;
   }
+
   .copywright {
     margin-right: 0;
   }
+
   footer {
     padding: 0 5%;
   }
+
   .about-hero {
     padding: 100px;
   }
+
   .about-summary {
     margin-right: 50px;
   }
 }
 
 @media screen and (max-width: 1088px) {
-  /**Body**/
+  /* Body */
 
   .test-one {
     display: block;
   }
+
   .test-two {
     display: block;
   }
+
   .pref-three-row {
     display: block;
     margin-bottom: 0;
   }
+
   .preference-text {
     display: flex;
-    margin: 0 10px 30px 10px;
+    margin: 10px 10px 30px 10px;
     max-width: 100%;
   }
+
   .preference-group {
     max-width: 70%;
     flex: 1;
     margin: 0 auto;
   }
+
   .container {
     width: 50%;
   }
@@ -1301,71 +1341,86 @@ nav {
   .nav-text {
     display: none;
   }
+
   .header-logo {
     margin-left: 30px;
   }
+
   .last-nav-link {
     margin-right: 30px;
   }
+
   /* Body */
+
   .studio-body {
     padding-top: 75px;
   }
+
   .project-background {
     flex-direction: column-reverse;
     height: 750px;
     padding-top: 50px;
   }
+
   .project-text {
     text-align: center;
   }
+
   .studio-dash {
     display: block;
     height: initial;
     margin: 0 auto;
     width: 700px;
   }
+
   .p-top-margin {
     margin-top: 20px;
   }
+
   .project-info {
     margin-bottom: 75px;
     padding: 30px 50px;
     width: 70%;
   }
+
   .survey-results {
     width: 75%;
   }
+
   .percentage {
     font-size: 48px;
   }
+
   .competitive-results {
     padding: 30px 50px;
     width: 70%;
   }
-  /* .second-paragraph {
-    margin: 16px 100px;
-  } */
+
   .persona-block {
     width: 40%;
   }
+
   .studio-h-two {
     margin-top: 35px;
   }
+
   .wireframes {
     display: block;
     margin: 40px auto 10px auto;
   }
+
   .stacked-wireframe-images {
     display: block;
     height: initial;
     margin: 0 auto;
     width: 75%;
   }
+
   .wireframe-insights {
     padding: 30px 50px;
     width: 70%;
   }
+
   .long-wireframe-image {
     display: block;
     height: initial;
@@ -1373,43 +1428,55 @@ nav {
     text-align: center;
     width: 50%;
   }
+
   .boxed-title {
     margin-left: 50px;
   }
+
   .mockup-rows {
     display: block;
   }
+
   .mockup-images {
     display: block;
     margin-bottom: 50px;
     text-align: center;
   }
+
   .mockup-image-sizes {
     width: 75%;
   }
+
   hr {
     width: 50%;
   }
+
   .more-testing-insights {
     padding: 30px 50px;
     width: 70%;
   }
+
   .preference-insights {
     padding: 30px 50px;
     width: 70%;
   }
+
   .blue-line {
     width: 70%;
   }
+
   .about-body {
     padding: 70px 100px;
   }
+
   .about-hero {
     padding: 50px 30px 50px 100px;
   }
+
   .tampic {
     width: 40%;
   }
+
   .about-h-one {
     font-size: 40px;
   }
@@ -1419,13 +1486,16 @@ nav {
     display: block;
     padding: 5%;
   }
+
   .social-links {
     display: flex;
     justify-content: center;
   }
+
   .copywright {
     text-align: center;
   }
+
   .container {
     width: 60%;
   }
@@ -1436,43 +1506,55 @@ nav {
   .nav-links {
     display: none;
   }
+
   nav {
     display: block;
   }
+
   .header-logo {
     margin: 8px 0 8px 16px;
   }
+
   /* Body */
+
   .studio-dash {
     display: block;
     height: initial;
     margin: 0 auto;
     width: 600px;
   }
+
   .studio-header {
     height: 600px;
   }
-  .roles, .timeframe {
+
+  .roles,
+  .timeframe {
     border-radius: 0;
     box-shadow: none;
     height: inherit;
     padding: 0;
   }
+
   .deliverables {
     border-radius: 0;
     box-shadow: none;
     margin-left: 0;
     padding: 0;
   }
+
   .button {
     width: 45%;
   }
+
   .text-margin {
     margin: 0 0 0 50px;
   }
+
   .p-top-margin {
     margin: 20px 50px;
   }
+
   .project-info {
     border: none;
     border-radius: 0;
@@ -1481,71 +1563,90 @@ nav {
     padding: 30px 50px;
     width: 70%;
   }
+
   .insights-p2 {
     line-height: 40px;
   }
+
   .survey-results {
     padding: 40px 0;
     width: 75%;
   }
+
   .all-results {
     display: block;
     margin: 0 125px;
     text-align: center;
-}
+  }
+
   .summary-ul {
     margin: 0 auto 25px auto;
     text-align: center;
   }
+
   .summary-title {
     margin: 0 auto;
     text-align: center;
   }
+
   .second-paragraph {
     margin: 16px 50px;
   }
+
   .competitive-results {
     padding: 30px 30px;
     width: 80%;
   }
+
   .both-personas {
     display: block;
   }
+
   .persona-block {
     width: 60%;
     margin: 0 auto;
   }
+
   .top {
     margin-bottom: 40px;
   }
+
   .studio-h-two {
     margin-top: 35px;
   }
+
   .user-flow {
     width: 80%;
   }
+
   .age {
     width: 50%;
     margin: 0 auto;
   }
+
   .centered-image {
     width: 80%;
   }
+
   .logo-sketches {
     display: block;
   }
+
   .logo-sketch-div {
     margin: 0 auto;
     width: 60%;
   }
+
   .final-logos {
     display: block;
     margin-top: 40px;
   }
+
   .logos {
     margin: 40px auto;
     width: 45%;
   }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -1563,32 +1664,38 @@ nav {
     margin: 6px 16px 6px 0;
     width: 35px;
   }
+
   .about-body {
     padding: 70px 50px;
   }
+
   .about-hero {
     padding: 50px 30px 50px 75px;
   }
+
   .about-h-one {
     font-size: 36px;
   }
+
   .wireframe-insights {
     padding: 30px 30px;
     width: 80%;
   }
+
   .more-testing-insights {
     padding: 30px 30px;
     width: 80%;
   }
-.preference-insights {
+
+  .preference-insights {
     padding: 30px 30px;
     width: 80%;
   }
-  /* Footer */
 }
 
 @media screen and (max-width: 675px) {
   /* Body */
+
   .studio-body {
     padding-top: 55px;
   }
@@ -1597,102 +1704,130 @@ nav {
     height: initial;
     width: 513px;
   }
+
   .studio-dash {
     width: 450px;
   }
+
   .studio-header {
     height: 530px;
   }
+
   .text-margin {
     margin: 0 0 0 30px;
   }
+
   .p-top-margin {
     margin: 20px 30px;
   }
+
   .all-results {
     display: block;
     text-align: center;
     margin: 0 75px;
   }
+
   .second-paragraph {
     margin: 16px 30px;
   }
+
   .persona-block {
     width: 70%;
   }
+
   .studio-h-two {
     margin-top: 35px;
   }
+
   .preference-group {
     max-width: 80%;
   }
+
   .two-buttons {
     display: block;
   }
+
   .story-flow-button {
     margin: 0 auto;
   }
+
   .story-flow-button:first-child {
     margin-bottom: 25px;
   }
+
   .stacked-wireframe-images {
     height: initial;
     width: 80%;
     margin: 0 auto;
   }
+
   .mockup-image-sizes {
     width: 80%;
   }
+
   hr {
     width: 65%;
   }
+
   .age {
     width: 80%;
     margin: 0 auto;
   }
+
   .container {
     width: 70%;
   }
+
   .about-body {
     padding: 70px 30px;
   }
+
   .about-hero {
     display: block;
     margin: 0 auto;
     padding: 50px 0;
   }
+
   .about-summary {
     margin: 0 auto;
   }
+
   .about-h-one {
     font-size: 36px;
     margin: 0 auto;
     text-align: center;
   }
+
   .tampic {
     display: block;
     margin: 0 auto 15px auto;
     width: 60%;
   }
+
   .project-background {
     padding: 20px 0;
   }
+
   .logos {
     margin: 40px auto;
     width: 60%;
   }
+
   .competitive-results {
     padding: 30px 15px;
     width: 90%;
   }
+
   .wireframe-insights {
     padding: 30px 15px;
     width: 90%;
   }
+
   .more-testing-insights {
     padding: 30px 15px;
     width: 90%;
   }
+
   .preference-insights {
     padding: 30px 15px;
     width: 90%;
@@ -1705,56 +1840,72 @@ nav {
     height: initial;
     width: 80%;
   }
+
   .studio-dash {
     display: block;
     height: initial;
     margin: 0 auto;
-    width: 400px;
+    width: 90%;
   }
-.studio-header {
+
+  .studio-header {
     height: 450px;
   }
+
   .text-margin {
     margin: 0 0 0 16px;
   }
+
   .p-top-margin {
     margin: 20px 16px;
   }
+
   .second-paragraph {
     margin: 16px 16px;
   }
+
   .insights-p2 {
     font-size: 20px;
     line-height: 35px;
     text-align: left;
   }
+
   .persona-block {
     width: 80%;
   }
+
   .studio-h-two {
     margin-top: 35px;
   }
+
   .boxed-title {
     margin-left: 25px;
   }
+
   .boxed-li {
     margin-left: 35px;
   }
+
   .long-wireframe-image {
     width: 75%;
   }
+
   .all-results {
     margin: 0 60px;
   }
+
   .container {
     width: 90%;
   }
+
   .project-background {
     padding: 10px 0;
   }
+
   .annotation {
     text-align: center;
   }
+
   .tampic {
     width: 70%;
   }
@@ -1764,14 +1915,16 @@ nav {
   .nav-links {
     display: none;
   }
+
   nav {
     display: block;
   }
+
   .header-logo {
     margin: 8px 0 8px 16px;
   }
+
   .about-body {
     padding: 70px 16px;
   }
-  /* Footer */
 }
