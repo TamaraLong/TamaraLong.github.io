@@ -2054,6 +2054,10 @@ nav {
     padding: 30px 30px;
     width: 80%;
   }
+
+  .sp-dash {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 675px) {
@@ -2208,9 +2212,14 @@ nav {
     padding: 30px 15px;
     width: 90%;
   }
-  .sp-wires {
+
+ .sp-wires {
     width: 22%;
-}
+  }
+
+  .sp-header {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 575px) {
