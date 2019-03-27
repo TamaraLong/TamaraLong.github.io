@@ -1832,6 +1832,10 @@ nav {
   .container {
     width: 60%;
   }
+
+  .sp-wires {
+    width: 26%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -2228,6 +2232,10 @@ nav {
 
   .studio-header {
     height: 450px;
+  }
+
+  .sp-header {
+    height: 500px;
   }
 
   .text-margin {
