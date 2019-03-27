@@ -940,14 +940,14 @@ ol {
 
 .abtesting {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 300px;
+  justify-content: space-between;
+  margin: 40px 250px;
   padding: 0 100px 40px 100px;
 }
 
 .sp-abtest {
   height: 100%;
-  width: 33%;
+  width: 45%;
 }
 
 .long-wireframe-image {
@@ -1045,7 +1045,7 @@ hr {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
   margin: 0 auto;
-  width: 22%;
+  width: 25%;
 }
 
 .sp-usability1 {
@@ -1084,6 +1084,18 @@ hr {
 .test-one {
   display: flex;
   justify-content: center;
+}
+
+.sp-test-one {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.sp-test-three {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .test-two {
@@ -1177,6 +1189,11 @@ hr {
   justify-content: space-between;
 }
 
+.sp-logo-sketches {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo-img {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -1194,8 +1211,21 @@ hr {
   width: 25%;
 }
 
+.sp-final-img {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.sp-logo {
+  text-align: center;
+}
+
 .logo-sketch-div {
   width: 33%;
+}
+
+.sp-logo-sketch-div {
+  width: 49%;
 }
 
 .final-img {
@@ -1362,6 +1392,10 @@ hr {
 
 .sp-color {
   color: #20a37b;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .sp-bordercolor {
