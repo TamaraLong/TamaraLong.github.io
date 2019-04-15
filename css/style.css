@@ -70,6 +70,11 @@ p {
   line-height: 30px;
 }
 
+.annotation {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 /* structure */
 
 /* nav bar */
@@ -541,7 +546,7 @@ textarea {
 
 .sp-header {
   background: #20a37b;
-  height: 690px;
+  height: 650px;
   overflow: visible;
   padding-top: 75px;
 }
@@ -602,6 +607,10 @@ textarea {
 
 .timeframe {
   margin-top: 15px;
+}
+
+.sp-boxes {
+  padding: 40px 30px 30px 30px;
 }
 
 .deliverables {
@@ -677,11 +686,11 @@ ol {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 64px;
   font-weight: bolder;
-  margin-bottom: 15px;
+  margin: 30px auto 15px auto;
 }
 
 .percentage-p {
-  line-height: 20px;
+  line-height: 26px;
 }
 
 .insights-p {
@@ -716,10 +725,16 @@ ol {
 .competitive-results {
   border: 4px solid #20a39e;
   border-radius: 10px;
-  height: 300px;
+  height: 250px;
   margin: 40px auto;
   padding: 40px 100px;
   width: 840px;
+}
+
+.sp-comp {
+  margin: 0 300px;
+  max-width: 700px;
+  width: 700px;
 }
 
 .insights {
@@ -768,7 +783,7 @@ ol {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 0 5px;
   max-width: 475px;
-  width: 25%;
+  width: 28%;
 }
 
 .first-persona {
@@ -877,7 +892,11 @@ ol {
   display: block;
   height: initial;
   margin-top: 40px;
-  width: 695px;
+  width: 750px;
+}
+
+.sp-stories {
+  height: 310px;
 }
 
 .two-buttons {
@@ -911,9 +930,8 @@ ol {
 
 .sp-sketches {
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  width: 25%;
+  margin: 50px auto 0 auto;
+  width: 80%;
 }
 
 .wireframes {
@@ -925,7 +943,7 @@ ol {
 .sp-wireframes {
   display: flex;
   justify-content: space-around;
-  margin: 40px auto 10px auto;
+  margin: 40px auto 0 auto;
 }
 
 .sp-wireframes2 {
@@ -938,7 +956,12 @@ ol {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
   margin: 0 10px;
-  width: 30%;
+  max-width: 250px;
+  width: 250px;
+}
+
+.group-one {
+  margin-bottom: 20px;
 }
 
 .sp-wires2 {
@@ -946,7 +969,8 @@ ol {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
   margin: 0 10px;
-  width: 30%;
+  max-width: 250px;
+  width: 250px;
 }
 
 .abtesting {
@@ -1011,14 +1035,15 @@ ol {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: intitial;
-  margin: 40px auto;
-  width: 85%;
+  margin: 40px auto 0 auto;
+  width: 250px;
 }
 
 .mockup-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 10px;
 }
 
 .mockup-rows {
@@ -1036,6 +1061,15 @@ hr {
 
 .hr-style {
   margin: 40px auto 10px auto;
+}
+
+.hr-survey {
+  margin-top: 50px;
+  width: 500px;
+}
+
+.extra-space {
+  margin: 50px auto;
 }
 
 .blue-line {
@@ -1065,7 +1099,8 @@ hr {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: auto;
   margin: 10px;
-  width: 300px;
+  max-width: 250px;
+  width: 250px;
 }
 
 .sp-usability1 {
@@ -1073,7 +1108,8 @@ hr {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
   margin: 10px;
-  width: 200px;
+  max-width: 250px;
+  width: 250px;
 }
 
 .sp-usabilitytext {
@@ -1138,26 +1174,31 @@ hr {
 
 .sp-preference-group {
   max-width: 33%;
-  margin-right: 10px;
+  margin: 5px;
 }
 
 .preference-pic {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
   width: 100%;
 }
 
 .sp-preferencepic {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 350px;
+  max-width: 250px;
+  width: 250px;
 }
 
 .preference-text {
   display: flex;
   margin: 0 10px;
   max-width: 100%;
+}
+
+.sp-pref {
+  display: block;
 }
 
 .blue-results {
@@ -1265,7 +1306,7 @@ hr {
   height: auto;
   margin: 0 auto;
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
 }
 
 .sp-logo {
@@ -1285,6 +1326,7 @@ hr {
 }
 
 .logo-annotation {
+  margin-top: 0;
   text-align: center;
 }
 
